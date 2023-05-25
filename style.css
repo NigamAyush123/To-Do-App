@@ -1,0 +1,72 @@
+.bod{
+    background: linear-gradient(135deg ,green,white);
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+    font-family: 'Permanent Marker', cursive;
+
+
+}
+.todo{
+    text-align: center;
+    margin: 150px;
+    padding: 50px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 3px solid burlywood;
+}
+#input{
+    background: transparent;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+#button{
+    background-color: orange;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+}
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    font-size: 17px;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    left: 150px;
+    width: 15px;
+    height: 20px;
+    border-radius: 20%;
+    background-image: url(images/unchecked2.png);
+    background-size: cover;
+    background-position:center ;
+
+}
+.checked{
+    text-decoration: line-through;
+    color: rgb(110, 75, 75);
+}
+.checked::before{
+    height: 30px;
+    width: 15px;
+    background-image: url(images/checked.png);
+}
+ul li span{
+    color:black;
+    right: 0;
+    top:50px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    text-align: right;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+ul li span:hover{
+    background-color: gray;
+}
